@@ -62,6 +62,33 @@ FIRST ACTIVITY:
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
+SECOND ACTIVITY:
+
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/factorialTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:text="Factorial will be calculated here"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
 JAVA CODE:
 
 FIRST ACTIVITY:
@@ -92,6 +119,40 @@ public class MainActivity extends AppCompatActivity {
     }
 }
 
+
+SECOND ACTIVITY:
+
+package com.example.explicitintent;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.TextView;
+
+public class SecondActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second);
+
+        Intent intent = getIntent();
+        int number = intent.getIntExtra("number", 0);
+
+        TextView factorialTextView = findViewById(R.id.factorialTextView);
+        factorialTextView.setText("Factorial of " + number + " is " + factorial(number));
+    }
+
+    private int factorial(int n) {
+        if (n == 0 || n == 1) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
+    }
+}
+
 ```
 
 ## OUTPUT
@@ -102,15 +163,13 @@ EMULATOR WITH CODE
 <img width="948" alt="e1" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/1b9ba5f9-b8e6-4fb9-8ebd-56dcb55292c9">
 
 
-EMULATOR
-
-FIRST PAGE
+FIRST ACTIVITY
 
 
 <img width="248" alt="e2" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/b57d88f5-242d-49cd-89a7-b32018abd458">
 
 
-SECOND PAGE
+SECOND ACTIVITY
 
 
 <img width="250" alt="e3" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/23431b01-442c-472f-b75c-17fe7fa400a0">
