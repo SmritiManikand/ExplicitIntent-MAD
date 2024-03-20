@@ -12,7 +12,11 @@ Latest Version Android Studio
 
 ## ALGORITHM:
 
+1. Start a new project in Android Studio.
 
+2. Design a simple layout(.xml File) with two buttons as EXPLICIT.
+
+3. By clicking Explicit Intent button open second page using Explicit Intents in MainActivity file.
 
 ## PROGRAM:
 ```
