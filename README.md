@@ -91,15 +91,25 @@ public class MainActivity extends AppCompatActivity {
 
 ## OUTPUT
 
-EMULATOR
+EMULATOR WITH CODE
 
 <img width="948" alt="e1" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/1b9ba5f9-b8e6-4fb9-8ebd-56dcb55292c9">
 
-EMULATOR WITH CODE
+
+EMULATOR
+
+FIRST PAGE
 
 <img width="248" alt="e2" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/b57d88f5-242d-49cd-89a7-b32018abd458">
 
+
+SECOND PAGE
+
+<img width="250" alt="e3" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/23431b01-442c-472f-b75c-17fe7fa400a0">
+
+
 ## RESULT
+
 Thus a Simple Android Application create a Explicit Intents using Android Studio is developed and executed successfully.
 
 
