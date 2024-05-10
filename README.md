@@ -1,4 +1,4 @@
-# Ex.No:3b To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
+# Ex.No:4 To create a two screens , first screen will take one number input from user. After click on Factorial button, second screen will open and it should display factorial of the same number using Explicit Intents.
 
 
 ## AIM:
@@ -156,12 +156,6 @@ public class SecondActivity extends AppCompatActivity {
 ```
 
 ## OUTPUT
-
-EMULATOR WITH CODE
-
-
-<img width="948" alt="e1" src="https://github.com/SmritiManikand/ExplicitIntent-MAD/assets/113674204/1b9ba5f9-b8e6-4fb9-8ebd-56dcb55292c9">
-
 
 FIRST ACTIVITY
 
